@@ -80,14 +80,14 @@ COWRIE_DIR="/opt/cowrie"          # install prefix
 1. **Clone the repo** (use SSH if you’ve set up keys):
 
    ```bash
-   git clone git@github.com:<you>/cowrie-setup.git
-   cd cowrie-setup
+   git clone https://github.com/pb2106/Cowock.git
+   cd Cowock
    ```
-2. **Review & edit config** at the top of `setup-cowrie.sh` if desired.
+2. **Review & edit config** at the top of `cowock.sh` if desired.
 3. **Run the installer**:
 
    ```bash
-   sudo ./setup-cowrie.sh
+   sudo ./cowock.sh
    ```
 4. **Test Cowrie service**:
 
@@ -101,7 +101,7 @@ COWRIE_DIR="/opt/cowrie"          # install prefix
    * Send the **open** sequence using **TCP**:
 
      ```bash
-     knock -t <server-ip> 7000 8000 9000
+     knock -t <server-ip> 1111 2222 3333
      # now SSH to 22 goes to your REAL_SSH_PORT (22222) for YOUR IP
      ssh <user>@<server-ip>      # port 22 works for you
      # or explicitly:
@@ -110,7 +110,7 @@ COWRIE_DIR="/opt/cowrie"          # install prefix
 6. **Close access** (flip 22 back to Cowrie for everyone):
 
    ```bash
-   knock -t <server-ip> 9000 8000 7000
+   knock -t <server-ip> 3333 2222 1111
    ```
 
 ---
