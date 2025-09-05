@@ -4,7 +4,7 @@ A one‑shot Bash script that installs and configures a **Cowrie SSH honeypot** 
 
 ---
 
-## ✨ Features
+## Features
 
 * Automated install of Cowrie (Python venv), dependencies, and service files
 * Listens on a dedicated honeypot port (`HONEYPOT_PORT`, default `2223`)
@@ -16,16 +16,7 @@ A one‑shot Bash script that installs and configures a **Cowrie SSH honeypot** 
 
 ---
 
-## 🧠 How it works (high level)
-
-1. The script moves Cowrie to its own port (`HONEYPOT_PORT`).
-2. A NAT PREROUTING rule makes **incoming TCP/22 redirect to Cowrie** by default.
-3. `knockd` listens for a **TCP SYN knock sequence**. When seen **from your IP**, it **replaces** that NAT rule to redirect TCP/22 → `REAL_SSH_PORT` **but only for your IP**.
-4. A reverse knock closes access and puts everyone back to Cowrie.
-
----
-
-## ⚠️ Pre‑flight Checklist (do this first)
+## Checklist (do this first)
 
 **Avoid locking yourself out.**
 
