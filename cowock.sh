@@ -4,8 +4,8 @@ set -e
 # ---------- CONFIG ----------
 REAL_SSH_PORT=22222       # your real SSH port
 HONEYPOT_PORT=2223        # Cowrie will listen here
-KNOCK_SEQ_OPEN="7000,8000,9000"
-KNOCK_SEQ_CLOSE="9000,8000,7000"
+KNOCK_SEQ_OPEN="1111,2222,3333"
+KNOCK_SEQ_CLOSE="3333,2222,1111"
 COWRIE_USER="cowrie"
 COWRIE_DIR="/opt/cowrie"
 # ----------------------------
