@@ -43,7 +43,7 @@ A one‑shot Bash script that installs and configures a **Cowrie SSH honeypot** 
 
 ---
 
-## 📦 What the script installs/configures
+## What the script installs/configures
 
 * Packages: `git python3 python3-venv python3-pip libssl-dev libffi-dev build-essential knockd iptables-persistent`
 * User & directories: creates user `cowrie`, sets up `/opt/cowrie` and clones Cowrie there
@@ -75,7 +75,7 @@ COWRIE_DIR="/opt/cowrie"          # install prefix
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Clone the repo** (use SSH if you’ve set up keys):
 
@@ -115,7 +115,7 @@ COWRIE_DIR="/opt/cowrie"          # install prefix
 
 ---
 
-## 🧩 Service & Logs
+## Service & Logs
 
 **Cowrie**
 
@@ -142,7 +142,7 @@ sudo journalctl -u knockd -e
 sudo iptables -t nat -L PREROUTING -n --line-numbers
 ```
 
-## 🧱 Log Rotation (minimal logs)
+## Log Rotation (minimal logs)
 
 The script installs `/etc/logrotate.d/cowrie`:
 
@@ -164,7 +164,7 @@ The script installs `/etc/logrotate.d/cowrie`:
 
 ---
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 * **I locked myself out of SSH**
 
@@ -208,7 +208,7 @@ The script installs `/etc/logrotate.d/cowrie`:
 
 ---
 
-## ♻️ Updating Cowrie later
+## Updating Cowrie later
 
 ```bash
 sudo -u cowrie bash -lc '
@@ -219,7 +219,7 @@ sudo systemctl restart cowrie
 
 ---
 
-## 🗑️ Uninstall / Rollback
+## Uninstall / Rollback
 
 ```bash
 # stop services
@@ -242,7 +242,8 @@ If you changed your SSH daemon to a non‑default port, remember to **restore** 
 
 ---
 
-## 🙌 Credits
+## Credits
 
 * [Cowrie](https://github.com/cowrie/cowrie) — SSH/Telnet honeypot.
-* This repo’s script wires Cowrie with port‑knocking and minimal‑log defaults for ease of deployment.
+* Ashwin Jude Dcosta
+* [Pranamya R](https://github.com/PranamyaRao-Alaje)
