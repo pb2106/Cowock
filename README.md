@@ -245,5 +245,5 @@ If you changed your SSH daemon to a non‑default port, remember to **restore** 
 ## Credits
 
 * [Cowrie](https://github.com/cowrie/cowrie) — SSH/Telnet honeypot.
-* Ashwin Jude Dcosta
+* [Ashwin Jude Dcosta](https://github.com/Ashwin-jude)
 * [Pranamya R](https://github.com/PranamyaRao-Alaje)
