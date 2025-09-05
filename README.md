@@ -242,14 +242,6 @@ If you changed your SSH daemon to a non‑default port, remember to **restore** 
 
 ---
 
-## 🔒 Security Notes
-
-* Honeypots **attract attacks**. Prefer running on a VPS or isolated host.
-* Rotate or minimize logs if storage is limited (this repo defaults to minimal retention).
-* Keep your real SSH hardened: keys‑only auth, fail2ban/slowdown, and regular updates.
-
----
-
 ## 🙌 Credits
 
 * [Cowrie](https://github.com/cowrie/cowrie) — SSH/Telnet honeypot.
